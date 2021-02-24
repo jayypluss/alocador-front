@@ -39,16 +39,12 @@ function Alocar() {
     async function handleFormSubmit(formSubmitEvent: FormEvent) {
         formSubmitEvent.preventDefault();
 
-        console.log(formSubmitEvent.target);
-
         let idContainerSelecionado = selectedContainer;
 
         let idsGruposCaixasSelecionados: any[] = [];
         Object.keys(selectedGruposCaixas).forEach((key) => {
             idsGruposCaixasSelecionados.push(key);
         });
-        console.log(`Container selecionado: ${idContainerSelecionado}`);
-        console.log(`Grupos de Caixas selecionados: ${JSON.stringify(idsGruposCaixasSelecionados)}`);
 
         const response = await api.post('alocar', {
             containerId: idContainerSelecionado,
@@ -81,16 +77,12 @@ function Alocar() {
     }
 
     function handleCheckboxChange(event: any) {
-        console.log(event.target);
         let grupoCaixasId = event.target.value;
-        console.log(grupoCaixasId);
         setSelectedGruposCaixas({ ...selectedGruposCaixas, [grupoCaixasId]: event.target.checked });
     }
 
     function handleRadioChange(event: any) {
-        console.log(event.target);
         let containerId = event.target.value;
-        console.log(containerId);
         setSelectedContainer(containerId);
     }
 

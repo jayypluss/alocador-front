@@ -15,11 +15,6 @@ function AlocarResultado() {
     const { state } = useLocation<stateType>();
     let resultadoAlocacao = state.respostaAlocacao;
     
-    
-    useEffect(() => {
-        console.log(state);
-    },[]);
-
     return (
             <div id="page-resultado-alocacao" className="alocacao">
                 <PageHeader title="Resultado da alocação"> </PageHeader>
@@ -51,10 +46,6 @@ function AlocarResultado() {
 // export class AlocarResultado extends React.Component {
 //     constructor(props: any) {
 //         super(props);
-//         console.log(props);
-//         console.log(props?.container);
-//     }
-
 //     render() {
 //         return (
 //             <div id="page-alocar-resultado" className="alocacao">

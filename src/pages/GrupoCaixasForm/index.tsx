@@ -31,7 +31,6 @@ function GrupoCaixasForm() {
             history.push('/');
         }).catch((e) => {   
             alert('Erro no cadastro!');
-            console.log(e);
         });
     }
 

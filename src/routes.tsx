@@ -10,7 +10,7 @@ import GrupoCaixasList from './pages/GrupoCaixasList';
 
 function Routes() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/alocacao-front">
             <Route path="/" exact component={Landing} />
             <Route path="/container/criar" component={ContainerForm} />
             <Route path="/container/listar" component={ContainerList} />

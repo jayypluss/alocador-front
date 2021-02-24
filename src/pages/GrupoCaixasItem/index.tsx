@@ -7,6 +7,7 @@ export interface GrupoCaixas {
     comprimentoX: number;
     alturaY: number;
     larguraZ: number;
+    quantidadeCaixas: number;
 }
 
 interface GrupoCaixasItemProps {
@@ -25,12 +26,10 @@ const GrupoCaixasItem: React.FC<GrupoCaixasItemProps> = ({ grupoCaixas }) => {
             <p>Comprimento: {grupoCaixas.comprimentoX}</p>
             <p>Altura: {grupoCaixas.alturaY}</p>
             <p>Largura: {grupoCaixas.larguraZ}</p>
+            <p>Quantidade: {grupoCaixas.quantidadeCaixas}</p>
             
             <footer>
-                {/* <p>
-                    DADO
-                    <strong>TESTE</strong>
-                </p> */}
+                
             </footer>
 
         </article>

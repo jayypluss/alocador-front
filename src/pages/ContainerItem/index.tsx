@@ -1,7 +1,6 @@
 import React from 'react';
 
 import './styles.css'
-import api from '../../services/api';
 
 export interface Container {
     _id: number;
@@ -10,7 +9,7 @@ export interface Container {
     larguraZ: number;
 }
 
-interface ContainerItemProps {
+export interface ContainerItemProps {
     container: Container;
 }
 

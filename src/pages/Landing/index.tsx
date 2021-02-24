@@ -14,25 +14,33 @@ function Landing() {
                 </div>
 
                 <div className="buttons-container">
-                    <div>
-                        <Link to="/container/criar" className="criar">
+                    <div className="botao-alocar-container">
+                        <Link to="/alocar" className="alocar">
                             {/* <img src={} alt=""/> */}
-                            Criar Container
-                        </Link>
-                        <Link to="/container/listar/" className="listar">
-                            {/* <img src={} alt=""/> */}
-                            Listar containers
+                            Alocar em container
                         </Link>
                     </div>
-                    <div>
-                        <Link to="/grupocaixas/criar" className="criar">
-                            {/* <img src={} alt=""/> */}
-                            Criar Grupo de Caixas
-                        </Link>
-                        <Link to="/grupocaixas/listar/" className="listar">
-                            {/* <img src={} alt=""/> */}
-                            Listar grupos de caixas
-                        </Link>
+                    <div className="botoes-crud-container">
+                        <div>
+                            <Link to="/container/criar" className="criar">
+                                {/* <img src={} alt=""/> */}
+                                Criar Container
+                            </Link>
+                            <Link to="/container/listar/" className="listar">
+                                {/* <img src={} alt=""/> */}
+                                Listar containers
+                            </Link>
+                        </div>
+                        <div>
+                            <Link to="/grupocaixas/criar" className="criar">
+                                {/* <img src={} alt=""/> */}
+                                Criar Grupo de Caixas
+                            </Link>
+                            <Link to="/grupocaixas/listar/" className="listar">
+                                {/* <img src={} alt=""/> */}
+                                Listar grupos de caixas
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

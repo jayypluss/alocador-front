@@ -1,4 +1,4 @@
-#page-container-list {
+#page-resultado-alocacao {
     width: 100vw;
     height: 100vh;
 }
@@ -33,12 +33,12 @@
     background: var(--color-secondary-dark);
 }
 
-#page-container-list main {
+#page-resultado-alocacao main {
     margin: 5rem auto;
     width: 90%;
 }
 
-#page-container-list main article {
+#page-resultado-alocacao main article {
     padding: 2rem 0;
 }
 
@@ -60,7 +60,7 @@ form fieldset {
 }
 
 @media (min-width: 700px) {
-    #page-container-list {
+    #page-resultado-alocacao {
         max-width: 100%;
     }
 
@@ -77,7 +77,7 @@ form fieldset {
         margin-top: 0;
     }
 
-    #page-container-list main {
+    #page-resultado-alocacao main {
         padding: 5rem 0;
         max-width: 740px;
         margin: 0 auto;

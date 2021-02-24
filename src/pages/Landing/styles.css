@@ -24,8 +24,18 @@
 
 .buttons-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 3.2rem 0;
+}
+
+.botao-alocar-container {
+    align-self: center;
+}
+
+.botoes-crud-container {
+    flex-direction: row;
+    display: flex;
 }
 
 .buttons-container a {
@@ -46,7 +56,7 @@
 }
 
 .buttons-container a:first-child {
-    margin-right: 1.6rem;
+    margin-right: 3.2rem;
 }
 
 .buttons-container a img {
@@ -61,11 +71,19 @@
     background: var(--color-secondary);
 }
 
+.buttons-container a.alocar {
+    background: var(--color-secondary);
+}
+
 .buttons-container a.listar:hover {
     background: var(--color-primary-light);
 }
 
 .buttons-container a.criar:hover {
+    background: var(--color-secondary-dark);
+}
+
+.buttons-container a.alocar:hover {
     background: var(--color-secondary-dark);
 }
 
@@ -76,11 +94,9 @@
 
 @media (min-width: 1100px) {
     #page-landing-content {
-        max-width: 1100px;
-
         display: grid;
-        grid-template-rows: 350px 1fr;
-        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
         "logo logo logo"
         "buttons buttons buttons"

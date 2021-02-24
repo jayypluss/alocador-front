@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dc6b941a540714fb39992b7e8987f85a",
+    "revision": "c3b3de1b3deb7c141c362b6929e7b566",
     "url": "/alocacao-front/index.html"
   },
   {
-    "revision": "c94effd669776bbfc671",
+    "revision": "64f6a78eb50e77163411",
     "url": "/alocacao-front/static/css/main.457fe2f6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/alocacao-front/static/js/2.4c033d97.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c94effd669776bbfc671",
-    "url": "/alocacao-front/static/js/main.da588b42.chunk.js"
+    "revision": "64f6a78eb50e77163411",
+    "url": "/alocacao-front/static/js/main.0ab9866e.chunk.js"
   },
   {
     "revision": "6c75decc9472ae718117",

@@ -1,6 +1,6 @@
 import React from 'react';
-
 import './styles.css'
+
 
 export interface GrupoCaixas {
     _id: number;
@@ -13,6 +13,7 @@ export interface GrupoCaixas {
 interface GrupoCaixasItemProps {
     grupoCaixas: GrupoCaixas;
 }
+
 
 const GrupoCaixasItem: React.FC<GrupoCaixasItemProps> = ({ grupoCaixas }) => {
     return (
@@ -29,9 +30,7 @@ const GrupoCaixasItem: React.FC<GrupoCaixasItemProps> = ({ grupoCaixas }) => {
             <p>Quantidade: {grupoCaixas.quantidadeCaixas}</p>
             
             <footer>
-                
             </footer>
-
         </article>
     )
 }

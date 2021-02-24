@@ -1,14 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-// import backIcon from '../../assets/images/icons/back.svg'
-
 import './styles.css'
+
 
 interface PageHeaderProps {
     title: string;
     description?: string;
 }
+
 
 const PageHeader: React.FC<PageHeaderProps> = (props) => {
     return (
@@ -17,7 +16,6 @@ const PageHeader: React.FC<PageHeaderProps> = (props) => {
                 <Link to="/">
                     <i className="fas fa-arrow-left"></i>
                 </Link>
-                {/* <img src={logoImg} alt="Proffy"/> */}
             </div>
             <div className="header-content">
                 <strong>{props.title}</strong>

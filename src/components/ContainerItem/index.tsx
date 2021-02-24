@@ -1,6 +1,6 @@
 import React from 'react';
-
 import './styles.css'
+
 
 export interface Container {
     _id: number;
@@ -12,6 +12,7 @@ export interface Container {
 export interface ContainerItemProps {
     container: Container;
 }
+
 
 const ContainerItem: React.FC<ContainerItemProps> = ({ container }) => {
     return (
@@ -27,12 +28,7 @@ const ContainerItem: React.FC<ContainerItemProps> = ({ container }) => {
             <p>Largura: {container.larguraZ}</p>
             
             <footer>
-                {/* <p>
-                    DADO
-                    <strong>TESTE</strong>
-                </p> */}
             </footer>
-
         </article>
     )
 }

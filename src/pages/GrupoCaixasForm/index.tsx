@@ -1,17 +1,14 @@
 import React, { useState, FormEvent } from 'react';
 import { useHistory } from 'react-router-dom';
-
 import PageHeader from '../../components/PageHeader';
 import Input from '../../components/Input';
-
+import api from '../../services/api';
 import './styles.css'
 
-import api from '../../services/api';
 
 function GrupoCaixasForm() {
     const history = useHistory();
 
-    const [id, setId] = useState('');
     const [comprimento, setComprimento] = useState('');
     const [altura, setAltura] = useState('');
     const [largura, setLargura] = useState('');
@@ -29,7 +26,7 @@ function GrupoCaixasForm() {
             alert('Cadastro realizado com sucesso!');
 
             history.push('/');
-        }).catch((e) => {   
+        }).catch((_) => {   
             alert('Erro no cadastro!');
         });
     }
@@ -37,8 +34,7 @@ function GrupoCaixasForm() {
     return (
         <div id="page-grupo-caixas-form" className="grupo-caixas">
             <PageHeader 
-                title={id ? `Grupo de caixas ${id}` : `Criar grupo de caixas`}
-                // description="O primeiro passo é preencher esse formulário de inscrição." 
+                title={`Criar grupo de caixas`}
             />
             
             <main>

@@ -1,6 +1,6 @@
 import React, { SelectHTMLAttributes } from 'react';
-
 import './styles.css'
+
 
 interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
     name: string;
@@ -10,6 +10,7 @@ interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
         label: string;
     }>;
 }
+
 
 const Select: React.FC<SelectProps> = ({ label, name, options, ...rest }) => {
     return (

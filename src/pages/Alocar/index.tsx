@@ -1,13 +1,13 @@
 import React, { useState, FormEvent, useEffect } from 'react';
 import Checkbox from '@material-ui/core/Checkbox';
 
-import PageHeader from '../PageHeader';
+import PageHeader from '../../components/PageHeader';
 
 import './styles.css'
 import api from '../../services/api';
-import ContainerItem, { Container } from '../ContainerItem';
+import ContainerItem, { Container } from '../../components/ContainerItem';
 import { Radio } from '@material-ui/core';
-import GrupoCaixasItem, { GrupoCaixas } from '../GrupoCaixasItem';
+import GrupoCaixasItem, { GrupoCaixas } from '../../components/GrupoCaixasItem';
 import { useHistory } from 'react-router-dom';
 
 function Alocar() {

@@ -1,11 +1,11 @@
 import React, { useState, FormEvent } from 'react';
 
-import PageHeader from '../PageHeader';
+import PageHeader from '../../components/PageHeader';
 
 import './styles.css'
 import Input from '../../components/Input';
 import api from '../../services/api';
-import GrupoCaixasItem, { GrupoCaixas } from '../GrupoCaixasItem';
+import GrupoCaixasItem, { GrupoCaixas } from '../../components/GrupoCaixasItem';
 
 function GrupoCaixasList() {
     const [gruposCaixas, setGruposCaixas] = useState([]);

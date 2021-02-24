@@ -1,7 +1,7 @@
 import React, { useState, FormEvent } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import PageHeader from '../PageHeader';
+import PageHeader from '../../components/PageHeader';
 import Input from '../../components/Input';
 
 import './styles.css'

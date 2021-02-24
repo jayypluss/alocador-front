@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import CaixaItem, { Caixa } from '../../components/CaixaItem';
 
-import PageHeader from '../PageHeader';
+import PageHeader from '../../components/PageHeader';
 
 import './styles.css'
 
@@ -31,9 +32,8 @@ function AlocarResultado() {
                     
 
                     {resultadoAlocacao.caixasAlocadas.map((caixa: Caixa) => {
-                        return <CaixaItem key={caixa._id} caixa={caixa} />
+                        return <CaixaItem key={`${caixa.id}->${caixa.idGrupoCaixas}`} caixa={caixa} />
                     })}
-                    <p>Caixas Alocadas: {JSON.stringify(resultadoAlocacao.caixasAlocadas)}</p>
 
                       
                 {/* _id: "6036a88afe20180039954cad"

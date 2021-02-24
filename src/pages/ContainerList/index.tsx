@@ -1,11 +1,11 @@
 import React, { useState, FormEvent } from 'react';
 
-import PageHeader from '../PageHeader';
+import PageHeader from '../../components/PageHeader';
 
 import './styles.css'
 import Input from '../../components/Input';
 import api from '../../services/api';
-import ContainerItem, { Container } from '../ContainerItem';
+import ContainerItem, { Container } from '../../components/ContainerItem';
 
 function ContainerList() {
     const [containers, setContainers] = useState([]);

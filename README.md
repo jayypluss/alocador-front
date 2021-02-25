@@ -15,3 +15,7 @@ para instalar as dependências.
 
 Após instalar as dependências, para rodar o projeto utilize o comando
 `npm start`.
+
+### Outras informações 
+
+Por padrão, esta aplicação irá rodar na porta `3000`, e irá apontar para a url `http://localhost:3001` para buscar os dados da API. Essa url pode ser alterada no arquivo https://github.com/jayypluss/alocador-front/blob/main/src/services/api.ts.

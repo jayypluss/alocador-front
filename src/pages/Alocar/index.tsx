@@ -17,6 +17,8 @@ function Alocar() {
     const [selectedGruposCaixas, setSelectedGruposCaixas] = useState({});
     const [selectedContainer, setSelectedContainer] = useState('');
 
+    const [error, setError] = useState('');
+
     useEffect(() => {
         searchContainers();
         searchGruposCaixas();
@@ -31,11 +33,13 @@ function Alocar() {
             idsGruposCaixasSelecionados.push(key);
         });
 
-        const response = await api.post('alocar', {
-            containerId: idContainerSelecionado,
-            gruposCaixasIds: idsGruposCaixasSelecionados
-        });
-        history.push('/resultado/alocacao', { respostaAlocacao: response.data });
+        if (idContainerSelecionado?.length > 0 && idsGruposCaixasSelecionados?.length > 0) {
+            const response = await api.post('alocar', {
+                containerId: idContainerSelecionado,
+                gruposCaixasIds: idsGruposCaixasSelecionados
+            });
+            history.push('/resultado/alocacao', { respostaAlocacao: response.data });
+        } else setError("É necessário escolher ao menos um container e uma caixa.");
     }
 
     async function searchContainers() {
@@ -83,16 +87,18 @@ function Alocar() {
 
     return (
         <div id="page-container-list" className="container">
-            <PageHeader title="Escolha um container e os grupos de caixa para alocar.">
+            <PageHeader title="Escolha abaixo 1 Container e os Grupos de Caixas para alocar">
             </PageHeader>
 
             <main>
                 <form id="componentes-alocacao" onSubmit={handleFormSubmit}>
+                    <strong>Containers:</strong>
                     <fieldset className="containers-fieldset">
                         {containers.map((container: Container) => {
                             return containerListItem(container)
                         })}
                     </fieldset>
+                    <strong>Caixas:</strong>
                     <fieldset className="grupos-caixas-fieldset">
                         {gruposCaixas.map((grupoCaixa: GrupoCaixas) => {
                             return gruposCaixasListItem(grupoCaixa)
@@ -100,6 +106,7 @@ function Alocar() {
                     </fieldset>
 
                     <footer>
+                        {error ?? <p>{error}</p>}
                         <button type="submit">
                             Alocar grupos de caixas no container
                         </button>

@@ -34,34 +34,34 @@ function GrupoCaixasForm() {
     return (
         <div id="page-grupo-caixas-form" className="grupo-caixas">
             <PageHeader 
-                title={`Criar grupo de caixas`}
+                title={`Criar Grupo de Caixas`}
             />
             
             <main>
                 <form onSubmit={handleCreateGrupoCaixas}>
                     <fieldset>
-                        <legend>Dados do Grupo de Caixas</legend>
+                        <legend>Preencha os dados do Grupo de Caixas</legend>
                         <Input 
                             name="comprimento" 
-                            label="Comprimento"
+                            label="Comprimento (cm)"
                             value={comprimento} 
                             onChange={(e) => { setComprimento(e.target.value) }} 
                         />
                         <Input 
                             name="altura" 
-                            label="Altura"
+                            label="Altura (cm)"
                             value={altura} 
                             onChange={(e) => { setAltura(e.target.value) }} 
                         />
                         <Input 
                             name="largura" 
-                            label="Largura"
+                            label="Largura (cm)"
                             value={largura} 
                             onChange={(e) => { setLargura(e.target.value) }} 
                         />
                         <Input 
                             name="quantidadeCaixas" 
-                            label="Quantidade de caixas"
+                            label="Quantidade de caixas (cm)"
                             value={quantidadeCaixas} 
                             onChange={(e) => { setQuantidadeCaixas(e.target.value) }} 
                         />

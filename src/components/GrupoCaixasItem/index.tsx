@@ -24,10 +24,10 @@ const GrupoCaixasItem: React.FC<GrupoCaixasItemProps> = ({ grupoCaixas }) => {
                 </div>
             </header>
             
-            <p>Comprimento: {grupoCaixas.comprimentoX}</p>
-            <p>Altura: {grupoCaixas.alturaY}</p>
-            <p>Largura: {grupoCaixas.larguraZ}</p>
-            <p>Quantidade: {grupoCaixas.quantidadeCaixas}</p>
+            <p>Comprimento: {grupoCaixas.comprimentoX} cm</p>
+            <p>Altura: {grupoCaixas.alturaY} cm</p>
+            <p>Largura: {grupoCaixas.larguraZ} cm</p>
+            <p>Quantidade: {grupoCaixas.quantidadeCaixas} cm</p>
             
             <footer>
             </footer>

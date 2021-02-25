@@ -27,7 +27,7 @@ const CaixaItem: React.FC<CaixaItemProps> = ({ caixa }) => {
                     <strong>Caixa {caixa.id+1} do grupo de caixas {caixa.idGrupoCaixas}</strong>
                 </div>
             </header>
-            <p>Volume: {caixa.volume}</p>
+            <p>Volume: {caixa.volume} cm³</p>
 
             <p>Posição: [x: {caixa.posicao.x} | y: {caixa.posicao.y} | z: {caixa.posicao.z} ]</p>
             <footer>

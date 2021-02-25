@@ -31,28 +31,28 @@ function ContainerForm() {
     return (
         <div id="page-container-form" className="container">
             <PageHeader 
-                title={`Criar container`}
+                title={`Criar Container`}
             />
             
             <main>
                 <form onSubmit={handleCreateContainer}>
                     <fieldset>
-                        <legend>Dados do container</legend>
+                        <legend>Preencha os dados do container</legend>
                         <Input 
                             name="comprimento" 
-                            label="Comprimento"
+                            label="Comprimento (cm)"
                             value={comprimento} 
                             onChange={(e) => { setComprimento(e.target.value) }} 
                         />
                         <Input 
                             name="altura" 
-                            label="Altura"
+                            label="Altura (cm)"
                             value={altura} 
                             onChange={(e) => { setAltura(e.target.value) }} 
                         />
                         <Input 
                             name="largura" 
-                            label="Largura"
+                            label="Largura (cm)"
                             value={largura} 
                             onChange={(e) => { setLargura(e.target.value) }} 
                         />

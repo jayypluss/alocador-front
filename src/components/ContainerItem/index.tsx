@@ -23,9 +23,9 @@ const ContainerItem: React.FC<ContainerItemProps> = ({ container }) => {
                 </div>
             </header>
             
-            <p>Comprimento: {container.comprimentoX}</p>
-            <p>Altura: {container.alturaY}</p>
-            <p>Largura: {container.larguraZ}</p>
+            <p>Comprimento: {container.comprimentoX} cm</p>
+            <p>Altura: {container.alturaY} cm</p>
+            <p>Largura: {container.larguraZ} cm</p>
             
             <footer>
             </footer>

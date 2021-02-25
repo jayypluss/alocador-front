@@ -18,7 +18,7 @@ function AlocarResultado() {
             <div id="page-resultado-alocacao" className="alocacao">
                 <PageHeader title="Resultado da alocação"> </PageHeader>
                 <main>                    
-                    <p>Volume Alocado: {resultadoAlocacao.volumeAlocado} cm³</p>
+                    {resultadoAlocacao?.volumeAlocado > 0 ? <p>Volume Alocado: {resultadoAlocacao.volumeAlocado} cm³</p> : <p>Não foi possível alocar nenhuma caixa.</p>}
                     
                     {resultadoAlocacao.caixasAlocadas.map((caixa: Caixa) => {
                         return <CaixaItem key={`${caixa.id}->${caixa.idGrupoCaixas}`} caixa={caixa} />

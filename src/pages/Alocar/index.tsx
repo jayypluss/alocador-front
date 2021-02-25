@@ -94,15 +94,17 @@ function Alocar() {
                 <form id="componentes-alocacao" onSubmit={handleFormSubmit}>
                     <strong>Containers:</strong>
                     <fieldset className="containers-fieldset">
-                        {containers.map((container: Container) => {
+                        {containers?.length > 0 ? containers.map((container: Container) => {
                             return containerListItem(container)
-                        })}
+                        }) 
+                        : <p>Não há Containers para serem exibidos</p>}
                     </fieldset>
                     <strong>Caixas:</strong>
                     <fieldset className="grupos-caixas-fieldset">
-                        {gruposCaixas.map((grupoCaixa: GrupoCaixas) => {
+                        {gruposCaixas?.length > 0 ? gruposCaixas.map((grupoCaixa: GrupoCaixas) => {
                             return gruposCaixasListItem(grupoCaixa)
-                        })}
+                        }) 
+                        : <p>Não há Grupos de Caixas para serem exibidos</p>}
                     </fieldset>
 
                     <footer>

@@ -29,9 +29,10 @@ function ContainerList() {
             </PageHeader>
 
             <main>
-                {containers.map((container: Container) => {
+                {containers?.length > 0 ? containers.map((container: Container) => {
                     return <ContainerItem key={container._id} container={container} />
-                })}
+                }) 
+                : <p>Não há Containers para serem exibidos.</p>}
             </main>
         </div>
     )

@@ -28,9 +28,10 @@ function GrupoCaixasList() {
             </PageHeader>
 
             <main>
-                {gruposCaixas.map((grupoCaixas: GrupoCaixas) => {
+                {gruposCaixas?.length > 0 ? gruposCaixas.map((grupoCaixas: GrupoCaixas) => {
                     return <GrupoCaixasItem key={grupoCaixas._id} grupoCaixas={grupoCaixas} />
-                })}
+                })
+                : <p>Não há Grupos de Caixas para serem exibidos.</p>}
             </main>
         </div>
     )

@@ -1,5 +1,7 @@
 # alocador-front
 React Frontend para exibição de dados da API de alocação de caixas em container.
+Este projeto serve como Frontend para a API do projeto: https://github.com/jayypluss/alocador-server.
+Portanto ambos têm que estar rodando para o funcionamento da aplicação.
 
 
 ### Instalando dependências
@@ -12,4 +14,4 @@ para instalar as dependências.
 ### Rodando o projeto
 
 Após instalar as dependências, para rodar o projeto utilize o comando
-`npm start`
+`npm start`.
